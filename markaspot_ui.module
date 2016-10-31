@@ -80,7 +80,7 @@ function markaspot_ui_form_alter(&$form, \Drupal\Core\Form\FormStateInterface $f
   // //https://www.drupal.org/node/2117411
   if ($form_id == "views_exposed_form") {
     if (isset($form['search_api_fulltext'])) {
-      $form['search_api_fulltext']['#attributes'] = array('placeholder' => array(t('Enter search term')));
+      $form['search_api_fulltext']['#attributes'] = array('placeholder' => array(t('Request #, Keyword')));
     }
   }
 }
